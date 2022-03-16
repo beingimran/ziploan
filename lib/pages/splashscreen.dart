@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:zip/components/constant.dart';
+import 'package:zip/remote-service/api.dart';
 
 import 'login.dart';
 
@@ -16,6 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     _nagivator();
+    RemoteApi.apicall();
   }
 
   _nagivator() async {
